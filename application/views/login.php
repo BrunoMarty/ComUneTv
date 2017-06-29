@@ -33,7 +33,7 @@
                             ?>
                       </div>
                             <?php echo form_submit('login', 'Login', 'class="btn btn-primary"') ?>
-					  <a href="<?php echo site_url('login/register') ?>" class="btn btn-link">S'inscrire </a>
+					  <a href="<?php echo site_url('register') ?>" class="btn btn-link">S'inscrire </a>
                       <?php echo form_close()?>
 					</form>
 
