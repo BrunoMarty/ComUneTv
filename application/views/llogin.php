@@ -22,8 +22,8 @@
 					  <div class="form-group">
                           <?php
                           echo form_open('login');
-                          echo form_label('Email','mail');
-                          echo form_input('mail','','class="form-control" id="mail" placeholder="Adresse Email"')
+                          echo form_label('Username','username');
+                          echo form_input('username','','class="form-control" id="username" placeholder="Pseudo"')
 
                           ?>
 					  </div>

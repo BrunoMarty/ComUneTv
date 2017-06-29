@@ -12,9 +12,7 @@
    <body>
       <div class="container" style="margin-top:100px;">
          <div class="row">
-            <div class="col-md-4" "page-header">
-                <h2> S'enregistrer </h2>
-             </div>
+            <div class="col-md-4"> </div>
             <div class="col-md-4">
                <div class="panel panel-default">
                   <div class="panel-body">
@@ -22,6 +20,9 @@
                      <?php
                                        echo form_open('login');
                         ?>
+                        <div class="form-group">
+                        <h5> register </h5>
+                        </div>
                      <div class="form-group">
                         <?php
                            echo form_label('Nom','fullname');
@@ -36,8 +37,8 @@
                      </div>
                      <div class="form-group">
                         <?php
-                           echo form_label('Username','username');
-                           echo form_input('username','','class="form-control" id="username" placeholder="Pseudo"')
+                           echo form_label('Pseudo','pseudo');
+                           echo form_input('pseudo','','class="form-control" id="pseudo" placeholder="Pseudo"')
                            ?>
                      </div>
 
@@ -53,15 +54,6 @@
                            echo form_password('password','','class="form-control" id="password" placeholder="Password"')
                            ?>
                      </div>
-            
-                     <div class="form-group">
-                        <?php
-                           echo form_label('Description','description');
-                           echo form_textarea('description','','class="form-control" id="desc" placeholder="Description"')
-                           ?>
-                     </div>
-
-
 
                      <?php echo form_submit('register', 'register', 'class="btn btn-primary"') ?>
 
