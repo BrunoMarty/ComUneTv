@@ -52,5 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['register'] = 'Register';
 $route['login'] = 'Login';
 $route['default_controller'] = 'Main';
+$route['refresh_chat'] = 'Main/chat_refresh';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
