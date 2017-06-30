@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Com.Une.Tv</title>   
+        <title>Com.Une.Tv</title>
         <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/bootstrap.css">
         <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css">
-        <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/videojs.css">
+        <link rel = "stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/video-js.scss">
         <script src="<?php echo base_url(); ?>/js/video.js"></script>
-            <script src="<?php echo base_url(); ?>/js/jquery-3.2.1.min.js"></script>
 
-  
     </head>
 
     <body>
-       <div class="container">
+        <div class="container-fluid">
+	    <div class="row head">
+		<div class="col-md-1">
+
+		</div>
+		<div class="col-md-9">
+
+		</div>
+		<div class="col-md-2">
+            <a href="<?php echo site_url('home'); ?>"><img id="logo"src="/img/logo_CUT.png" /></a>
+		</div>
+	</div>
+</div>
