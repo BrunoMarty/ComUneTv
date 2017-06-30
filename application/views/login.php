@@ -8,8 +8,8 @@
 
 					  <div class="form-group">
                           <?php
-                          echo form_open('login');
-                          echo form_label('Email','mail');
+                          echo form_open('login/connect');
+                          echo form_label('Email','email');
                           echo form_input('mail','','class="form-control" id="mail" placeholder="Adresse Email"')
 
                           ?>

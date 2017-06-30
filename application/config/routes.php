@@ -51,7 +51,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['ressourcerie'] = 'Main/ressourcerie';
 $route['register'] = 'Register';
+$route['addaccount'] = 'Register/add_account';
+$route['account'] = 'Register/account';
+$route['modifaccount'] = 'Register/modif_account';
 $route['login'] = 'Login';
+$route['logout'] = 'Login/logout';
+$route['login/connect'] = 'Login/session';
 $route['default_controller'] = 'Main';
 $route['refresh_chat'] = 'Main/chat_refresh';
 $route['404_override'] = '';

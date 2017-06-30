@@ -1,4 +1,4 @@
-
+<?php var_dump($_SESSION['user']) ?>
          <div class="row">
             <div class="col-md-4"> </div>
             <div class="col-md-4">
@@ -6,7 +6,7 @@
                   <div class="panel-body">
 
                      <?php
-                                       echo form_open('addaccount');
+                                       echo form_open('modifaccount');
                         ?>
                         <div class="form-group">
                         <h5> register </h5>
@@ -14,26 +14,26 @@
                      <div class="form-group">
                         <?php
                            echo form_label('Nom','fullname');
-                           echo form_input('fullname','','class="form-control" id="fullname" placeholder="Nom"')
+                           echo form_input('fullname',$_SESSION['user']['nom_US'],'class="form-control" id="fullname"')
                            ?>
                      </div>
                      <div class="form-group">
                         <?php
                            echo form_label('Prenom','prenom');
-                           echo form_input('prenom','','class="form-control" id="prenom" placeholder="Prenom"')
+                           echo form_input('prenom',$_SESSION['user']['prenom_US'],'class="form-control" id="prenom" placeholder="Prenom"')
                            ?>
                      </div>
                      <div class="form-group">
                         <?php
                            echo form_label('Pseudo','pseudo');
-                           echo form_input('pseudo','','class="form-control" id="pseudo" placeholder="Pseudo"')
+                           echo form_input('pseudo',$_SESSION['user']['pseudo_US'],'class="form-control" id="pseudo" placeholder="Pseudo"')
                            ?>
                      </div>
 
                     <div class="form-group">
                          <?php
                             echo form_label('Email','mail');
-                            echo form_input('mail','','class="form-control" id="mail" placeholder="Adresse Email"')
+                            echo form_input('mail',$_SESSION['user']['mail_US'],'class="form-control" id="mail" placeholder="Adresse Email"')
                             ?>
                     </div>
                      <div class="form-group">

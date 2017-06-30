@@ -29,20 +29,21 @@ class Login extends CI_Controller {
         $this->load->view('login');
         $this->load->view('footer');
     }
+    
+    function logout(){
+        session_destroy();
+        redirect('login', 'refresh');
+    }
 
-    function session($password) {
-        $username = $this->input->post('email');
+    function session() {
+        $password = $this->input->post('password');
+        $email = $this->input->post('mail');
         $result = $this->User_Model->login($email, $password);
-        if ($result) {
-            $sess_array = array();
-            foreach ($result as $row) {
-                $sess_array = $arrayName = array('email' => $row->username, 'password' => $row->fullname);
-                $this->session->set_userdata('logged_in', $sess_array);
-            }
-            return true;
-        } else {
-            $this->form_validation->set_message('Invalid email or password :/'); //'basisdata_cek',
-            return false;
+        echo $email."/".$password;
+        if ($result!=0) {
+            echo "toto";
+            $_SESSION['user'] = $result;
+            redirect('login', 'refresh');
         }
     }
 
