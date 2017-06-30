@@ -56,6 +56,7 @@ $route['account'] = 'Register/account';
 $route['modifaccount'] = 'Register/modif_account';
 $route['login'] = 'Login';
 $route['logout'] = 'Login/logout';
+$route['video/(:num)'] = 'Main/get_video/$1';
 $route['login/connect'] = 'Login/session';
 $route['default_controller'] = 'Main';
 $route['refresh_chat'] = 'Main/chat_refresh';

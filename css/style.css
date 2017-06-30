@@ -65,7 +65,7 @@ body html * {
           margin:
       }
 
-      .film > div {
+      .film > a > div {
           color:white;
           position:absolute;
           bottom:0;
@@ -73,7 +73,7 @@ body html * {
           background-color:rgba(0,0,0,0.8);
       }
 
-      .film p {
+      .film > a > div > p {
           font-size:2em;
           text-align:center;
       }
