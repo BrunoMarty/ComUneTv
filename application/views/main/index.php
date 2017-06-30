@@ -1,11 +1,7 @@
-<div class="container">
+
     <div class="row">
-        	<div class="col-md-2 leftbutton">
-                	<a><div class="bouton"></div></a>
-                    <a><div class="bouton"></div></a>
-                    <a><div class="bouton"></div></a>
-        	</div>
-<div class="col-md-8">
+
+<div class="col-md-9">
 <!--    data-setup='{}'-->
 <video
     id="my-player"
@@ -28,25 +24,20 @@
 </div>
 
 
-	<div class="col-md-2 rightbutton">
+	<div class="col-md-3 "
 <fieldset>
-<div class="onglet">
-
-</div>
      <div id="conversation">
          <?php
          foreach($chat as $mess):
              echo "<ul>".$mess['id_user'].":".$mess['content']."</ul>";
-
          endforeach;
          ?>
      </div><br />
-      <form action="#" method="post">
-
-        <input type="text" id="message" size="27">
-        <button type="button" id="envoyer" title="Envoyer">Envoyer</button>
+      <form id="send" action="#" method="post">
+        <input type="text" class="form-control" id="message">
+        <button type="button" class="form-control" id="envoyer" title="Envoyer">Send</button>
       </form>
-    </fieldset>
+</fieldset>
 
 <script>
 $('#envoyer').click(function() {
@@ -62,7 +53,7 @@ $('#envoyer').click(function() {
         success: function (data) {
             console.log(data)
             $('#conversation').empty()
-            $('#conversation').val(data)
+            $('#conversation').append(data)
         },
         error: function (data) {
             console.log("erreuuuuuuuuuuuuuuuuur" + data.toString());
@@ -70,6 +61,5 @@ $('#envoyer').click(function() {
     });
 })
 </script>
-</div>
 </div>
 </div>

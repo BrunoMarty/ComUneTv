@@ -1,42 +1,54 @@
 body html * {
     margin : 0;
     padding : 0;
+
 }
 
 .container-fluid {
     margin : 0;
     padding : 0;
+    background-color: #521100;
+    background-color: silver;
 }
 
-
+.menu{
+    margin:10%;
+}
  #conversation {
         width: 300px;
         height: 400px;
-        border: black 1px solid;
-        background-color: #efecca;
+        color:white;
+        background-color: #8B84A1;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
         overflow-x: hidden;
         overflow-y: scroll;
         padding: 5px;
         margin-left: 10px;
       }
+
+#message {
+    border-radius: 20px;
+    width : 10em;
+}
+#envoyer {
+    width : 5em;
+
+}
       fieldset {
-        width: 330px;
-        background-color: #e6e2af;
+        width: 500px;
+        background-color: black;
         border: black 1px solid;
       }
 
-      row{
-          margin:0;
-          padding:0;
-          width: 100%;
-      }
+
 
       .head {
-          height: 8em;
+          height: 6em;
           width: 100%;
           left:-2em;
           margin: 0;
-          background-color: #BBE4F9;
+          background-color: white;
           box-shadow:
       }
 
@@ -56,9 +68,11 @@ body html * {
       .leftbutton {
           background-color: black;
           width: 10em;
+          padding-right: 0;
       }
       .rightbutton {
-          background-color: black;
+          width: 10em;
+
       }
 
 
@@ -67,17 +81,11 @@ body html * {
         border-radius:50%;
         width:20px;
         height:20px;
-        margin: 8em;
+        margin-top: 8em;
+        margin-bottom: 8em;
         left: 1em;
       }
 
-      .film {
-          background-image:url('/img/film.jpg');
-          background-size: cover;
-          height:16em;
-          padding:0;
-          margin:
-      }
 
       .film > a > div {
           color:white;
@@ -87,17 +95,66 @@ body html * {
           background-color:rgba(0,0,0,0.8);
       }
 
+      .mignature {
+          /*padding: 3%;*/
+
+      }
+
       .film > a > div > p {
           font-size:2em;
           text-align:center;
       }
 
-      .mignature > img {
-          max-width: 100%;
+      .rightbutton  {
+          width:70%;
+          /*max-width:  60%;*/
 
       }
+      .mignature {
+          /*padding: 1%;*/
+      }
 
+.rowimg {
+    padding: 1%;
+    margin-right: 0;
+}
+
+#send {
+    margin:0.2em;
+}
 
 .recherche {
     background-color: black;
+    width: 20em;
+    padding:2em;
+    top: 1em;
+}
+
+footer{
+padding-bottom: 5em;
+height: 2em;
+}
+
+#mentions{
+    font-size: 9px;
+}
+
+.login {
+    margin-top: 2em;
+}
+
+.prog {
+    width: 20em;;
+    padding:5px;
+}
+
+.img {
+    margin-top: 0.5em;
+    width: 90%;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
 }

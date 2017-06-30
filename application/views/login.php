@@ -2,11 +2,11 @@
 
 	<div class="row">
 		<div class="col-md-4"></div>
-		<div class="col-md-4">
+		<div class="col-md-4 login">
 			<div class="panel panel-default">
 				<div class="panel-body">
 
-					  <div class="form-group">
+					  <div class="form-group ">
                           <?php
                           echo form_open('login/connect');
                           echo form_label('Email','email');

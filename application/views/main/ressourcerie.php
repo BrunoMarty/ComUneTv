@@ -1,114 +1,45 @@
-<h1>Com.Une.TV</h1>
+
 <!--    data-setup='{}'-->
 
-	<div class="row">
-		<div class="col-md-10">
                 <?php// foreach($videos as $video): ?>
-			<div  class="row">
-
             <!-- <a href="<?php// echo base_url(); ?>video/<?php// echo $video['id_VI']; ?>"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p>Toto</p>
             </div></a></div> -->
 
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
-                    <img src="/img/mini.jpg" alt="video">
-				</div>
-
-			</div>
-
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-				<div class="col-md-2">
-				</div>
-			</div>
             <?php// endforeach; ?>
-		</div>
-		<div class="col-md-2 recherche">
-			<form role="form">
-				<div class="form-group">
 
-					<label for="exampleInputEmail1">
-						Catégorie
-					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" />
-				</div>
-				<div class="form-group">
 
-					<label for="exampleInputPassword1">
-						Auteur
-					</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" />
-				</div>
-				<div class="form-group">
 
-					<label for="exampleInputFile">
 
-					</label>
-					<input type="file" id="exampleInputFile" />
-					<p class="help-block">
-						Example block-level help text here.
-					</p>
-				</div>
-				<div class="checkbox">
 
-					<label>
-						<input type="checkbox" /> Check me out
-					</label>
-				</div>
-				<button type="submit" class="btn btn-default">
-					Submit
-				</button>
-			</form>
-		</div>
-	</div>
+        <div class="col-md-9">
+        <!--    data-setup='{}'-->
+        <video
+            id="my-player"
+            class="video-js"
+            controls
+            preload="auto"
+            poster="//vjs.zencdn.net/v/oceans.png"
+            data-setup='{}'>
+          <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+          <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm"></source>
+          <source src="//vjs.zencdn.net/v/oceans.ogv" type="video/ogg"></source>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a
+            web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">
+              supports HTML5 video
+            </a>
+          </p>
+        </video>
+        </div>
+
+        <div class="col-md-3">
+
+
+        <h4> Programmation </h4>
+        <img src="/img/mini.jpg" class="col-md-3 img " alt="video" width="80%">
+        <img src="/img/mini.jpg" class="col-md-3 img " alt="video" width="80%">
+        <img src="/img/mini.jpg" class="col-md-3 img " alt="video" width="80%">
+
+
+       </div>
