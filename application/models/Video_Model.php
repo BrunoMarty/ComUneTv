@@ -17,8 +17,12 @@ class Video_Model extends CI_Model {
     }
     
     public function get_comments($id) {
-        $query = $this->db->get_where('commentaire', array('id_dvd' => $id));
+        $query = $this->db->get_where('commentaire', array('video_CO' => $id));
         return $query->result_array();
+    }
+    
+    public function set_comments($data) {
+         return $this->db->insert('commentaire', $data);
     }
 
 }

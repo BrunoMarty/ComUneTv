@@ -7,9 +7,11 @@ class Main extends CI_Controller {
     public function __construct() {
 
         parent::__construct();
+        $this->load->helper('form', 'url');
+        $this->load->helper('url_helper');
+        $this->load->library('form_validation');
         $this->load->model('Main_Model');
         $this->load->model('Video_Model');
-        $this->load->helper('url_helper');
     }
 
     public function index() {
@@ -33,18 +35,28 @@ class Main extends CI_Controller {
         $this->load->view('main/video', $data);
         $this->load->view('footer');
     }
+    
+    public function add_comment($video, $com){
+         $data = array(
+            'user_CO' => NULL,
+            'video_CO' => $this->input->post('video'),
+            'commentaire_CO' => $this->input->post('commentaire')
+        );
+         $this->Video_Model->set_comments($data);
+         redirect('video/'.$video, 'refresh');
+    }
 
     public function chat_refresh() {
 
         $this->Main_Model->add_chat(0, $this->input->post(1));
         $chat = $this->Main_Model->get_chat();
-        print_r($chat);
+     
         $content = "";
         foreach ($chat as $mess):
-            $content += "<ul>" . $mess['id_user'] . ":" . $mess['content'] . "</ul>";
+            $content .= "<ul>" . $mess['id_user'] . ":" . $mess['content'] . "</ul>";
         endforeach;
         echo $content;
-        return json_encode("toto");
+        return json_encode($content);
     }
 
 }
