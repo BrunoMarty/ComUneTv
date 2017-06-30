@@ -7,6 +7,7 @@ class Main extends CI_Controller {
 
         parent::__construct();
         $this->load->model('Main_Model');
+        $this->load->model('Video_Model');
         $this->load->helper('url_helper');
     }
 
@@ -21,6 +22,7 @@ class Main extends CI_Controller {
 
         public function ressourcerie()
         {
+                $data['videos'] = $this->Video_Model->get_videos;
                 $this->load->view('header');
 		$this->load->view('main/ressourcerie');
                 $this->load->view('footer');
