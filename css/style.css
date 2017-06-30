@@ -1,4 +1,4 @@
-body {
+body html * {
     margin : 0;
     padding : 0;
 }
@@ -21,30 +21,59 @@ body {
 
       row{
           margin:0;
+          padding:0;
+          width: 100%;
       }
 
       .head {
           height: 8em;
           width: 100%;
+          left:-2em;
+          margin: 0;
           background-color: #F73200;
       }
 
-      #logo {
-          position: fixed;
-          top: 1em;
-          right: 1em;
+      .head img {
+          float: right;
+          width: 8%;
+          top: 3em;
+          right: 2em;
       }
 
       .leftbutton {
           background-color: black;
-
+      }
+      .rightbutton {
+          background-color: black;
       }
 
 
-      #bouton{
-        background:#bfd70e;
+      .bouton{
+        background:#F73200;
         border-radius:50%;
-        width:160px;
-        height:160px;
-        border:2px solid #679403;
+        width:20px;
+        height:20px;
+        margin: 8em;
+        left: 1em;
+      }
+
+      .film {
+          background-image:url('/img/film.jpg');
+          background-size: cover;
+          height:16em;
+          padding:0;
+          margin:
+      }
+
+      .film > div {
+          color:white;
+          position:absolute;
+          bottom:0;
+          width: 100%;
+          background-color:rgba(0,0,0,0.8);
+      }
+
+      .film p {
+          font-size:2em;
+          text-align:center;
       }

@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Main extends CI_Controller {
-    
+
      public function __construct() {
 
         parent::__construct();
@@ -18,10 +18,17 @@ class Main extends CI_Controller {
 		$this->load->view('main/index',$data);
                 $this->load->view('footer');
 	}
-        
+
+        public function ressourcerie()
+        {
+                $this->load->view('header');
+		$this->load->view('main/ressourcerie');
+                $this->load->view('footer');
+        }
+
         public function chat_refresh()
         {
-            
+
             $this->Main_Model->add_chat(0,$this->input->post(1));
             $chat = $this->Main_Model->get_chat();
             print_r($chat);
@@ -36,9 +43,8 @@ class Main extends CI_Controller {
 
 
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-

@@ -13,13 +13,13 @@
         <div class="container-fluid">
 	    <div class="row head">
 		<div class="col-md-1">
-
+            <div class="boutton"> </div>
 		</div>
 		<div class="col-md-9">
 
 		</div>
-		<div class="col-md-2">
-            <a href="<?php echo site_url('home'); ?>"><img id="logo"src="/img/logo_CUT.png" /></a>
+		<div class="col-md-2 head">
+            <a href="<?php echo site_url('home'); ?>"><img id="logo"src="/img/logo_CUT.png";/></a>
 		</div>
 	</div>
 </div>
