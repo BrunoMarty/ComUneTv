@@ -36,7 +36,8 @@ body html * {
           width: 100%;
           left:-2em;
           margin: 0;
-          background-color: #F73200;
+          background-color: #BBE4F9;
+          box-shadow:
       }
 
       .head > div:first-child {
@@ -92,6 +93,11 @@ body html * {
       }
 
       .mignature > img {
-          width: 20%;
-          height: auto;
+          max-width: 100%;
+
       }
+
+
+.recherche {
+    background-color: black;
+}

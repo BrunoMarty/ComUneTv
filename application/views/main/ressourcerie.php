@@ -3,26 +3,33 @@
 
 	<div class="row">
 		<div class="col-md-10">
+                <?php// foreach($videos as $video): ?>
 			<div  class="row">
-				<div class="mignature" class="col-md-2">
+
+            <!-- <a href="<?php// echo base_url(); ?>video/<?php// echo $video['id_VI']; ?>"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p>Toto</p>
+            </div></a></div> -->
+
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
-				<div class="col-md-2">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
-				<div class="col-md-2">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
-				<div class="col-md-2">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
-				<div class="col-md-2">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 mignature">
                     <img src="/img/mini.jpg" alt="video">
 				</div>
+
 			</div>
+
 			<div class="row">
 				<div class="col-md-2">
 				</div>
@@ -65,8 +72,9 @@
 				<div class="col-md-2">
 				</div>
 			</div>
+            <?php// endforeach; ?>
 		</div>
-		<div class="col-md-2">
+		<div class="col-md-2 recherche">
 			<form role="form">
 				<div class="form-group">
 
@@ -85,7 +93,7 @@
 				<div class="form-group">
 
 					<label for="exampleInputFile">
-						
+
 					</label>
 					<input type="file" id="exampleInputFile" />
 					<p class="help-block">
@@ -104,16 +112,3 @@
 			</form>
 		</div>
 	</div>
-
-
-
-
-
-    <?php foreach($videos as $video): ?>
-<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 film">
-    <a href="<?php echo base_url(); ?>video/<?php echo $video['id_VI']; ?>"><div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><p>Toto</p>
-        </div></a>
-</div>
-
-
-<?php endforeach; ?>
