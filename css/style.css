@@ -90,3 +90,8 @@ body html * {
           font-size:2em;
           text-align:center;
       }
+
+      .mignature > img {
+          width: 20%;
+          height: auto;
+      }
