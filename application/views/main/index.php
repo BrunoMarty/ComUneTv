@@ -1,4 +1,11 @@
-<h1>Com.Une.TV</h1>
+<div class="container">
+    <div class="row">
+        	<div class="col-md-2 leftbutton">
+                	<a><div class="bouton"></div></a>
+                    <a><div class="bouton"></div></a>
+                    <a><div class="bouton"></div></a>
+        	</div>
+<div class="col-md-8">
 <!--    data-setup='{}'-->
 <video
     id="my-player"
@@ -18,18 +25,24 @@
     </a>
   </p>
 </video>
+</div>
+
+
+	<div class="col-md-2 rightbutton">
 <fieldset>
-     <legend>Un chat en jQuery</legend>
+<div class="onglet">
+
+</div>
      <div id="conversation">
-         <?php 
+         <?php
          foreach($chat as $mess):
              echo "<ul>".$mess['id_user'].":".$mess['content']."</ul>";
-           
+
          endforeach;
          ?>
      </div><br />
       <form action="#" method="post">
-      
+
         <input type="text" id="message" size="27">
         <button type="button" id="envoyer" title="Envoyer">Envoyer</button>
       </form>
@@ -45,7 +58,7 @@ $('#envoyer').click(function() {
         url: 'index.php/refresh_chat',
         type: 'POST',
         data: data,
-        
+
         success: function (data) {
             console.log(data)
             $('#conversation').empty()
@@ -57,3 +70,6 @@ $('#envoyer').click(function() {
     });
 })
 </script>
+</div>
+</div>
+</div>
