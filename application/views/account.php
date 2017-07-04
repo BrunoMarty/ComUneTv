@@ -1,4 +1,4 @@
-<?php var_dump($_SESSION['user']) ?>
+
          <div class="row">
             <div class="col-md-4"> </div>
             <div class="col-md-4">

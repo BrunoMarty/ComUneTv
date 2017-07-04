@@ -24,8 +24,8 @@
 
                         <?php
                         if(isset($_SESSION['user'])){ ?>
-                            <li role="presentation"><a href="#">Déconnexion</a></li>
-                            <li role="presentation"><a href="#">Mon Compte</a></li>
+                            <li role="presentation"><a href="<?php echo site_url('logout'); ?>">Déconnexion</a></li>
+                            <li role="presentation"><a href="<?php echo site_url('account'); ?>">Mon Compte</a></li>
 
                         <?php
                     }else { ?>

@@ -46,7 +46,7 @@ $('#envoyer').click(function() {
     var message = $('#message').val();
     var data = {"1": message};
     $.ajax({
-        url: 'index.php/refresh_chat',
+        url: '/index.php/refresh_chat',
         type: 'POST',
         data: data,
 
