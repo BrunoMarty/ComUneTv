@@ -14,11 +14,13 @@
     <body>
         <div class="container-fluid">
 
-            <div class="row head">
+            <div class="head">
 
-
+<div class="col-md-2 logo">
+                    <a href="<?php echo site_url('home'); ?>"><img id="logo"src="/img/cut.png";/></a>
+        		</div>
         		<div class="col-md-10">
-                    <ul class="nav nav-tabs">
+                    <ul class="nav nav-tabs navbar-right">
                         <li role="presentation" class="active"><a href="<?php echo site_url('main/index'); ?>">Acceuil</a></li>
                         <li role="presentation"><a href="<?php echo site_url('main/ressourcerie'); ?>">Ressourcerie</a></li>
 
@@ -34,7 +36,6 @@
                         ?>
                     </ul>
         		</div>
-        		<div class="col-md-2">
-                    <a href="<?php echo site_url('home'); ?>"><img id="logo"src="/img/cut.png";/></a>
-        		</div>
+        		
         	</div>
+
